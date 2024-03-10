@@ -1,5 +1,7 @@
 .nav {
 	margin-bottom: 4rem;
+	max-width: 1440px;
+	margin-inline: auto;
 }
 
 .nav-content,
