@@ -1,0 +1,79 @@
+:root {
+	--almost-white: hsl(0, 0%, 98%);
+	--medium-gray: hsl(0, 0%, 41%);
+	--almost-black: hsl(0, 0%, 8%);
+	--body-margin: 32px;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Epilogue", sans-serif;
+	margin: var(--body-margin);
+	background-color: var(--almost-white);
+}
+
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+.grid {
+	display: grid;
+}
+
+.no-border {
+	border: 0;
+}
+
+.modal {
+	border-radius: 0.5rem;
+	margin: auto 1rem;
+	padding: 2rem;
+	max-width: 800px;
+	line-height: 1.5;
+}
+
+.modal::backdrop {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal__content {
+	gap: 1.25rem;
+}
+
+.modal button {
+	display: block;
+	margin-inline: auto;
+	margin-top: 3rem;
+}
+
+.modal a {
+	outline: 0;
+	color: var(--medium-gray);
+	color: blueviolet;
+}
+
+@media screen and (width > calc(1000px + 2rem)) {
+	.modal {
+		margin: auto;
+	}
+}

@@ -1,0 +1,98 @@
+.nav {
+	margin-bottom: 4rem;
+}
+
+.nav-content,
+.menu-options {
+	width: 100%;
+}
+
+.menu-option-arrow {
+	margin-left: 1rem;
+}
+
+.menu-title {
+	position: relative;
+}
+
+.login-register-buttons {
+	margin-left: auto;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.flex-gap-04 {
+	gap: 0.4rem;
+}
+
+.flex-gap-1 {
+	gap: 1.75rem;
+}
+
+.flex-gap-2 {
+	gap: 2.5rem;
+}
+
+.flex-gap-3 {
+	gap: 4rem;
+}
+
+@media screen and (width <= 950px) {
+	.menu-options {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		flex-direction: column;
+		width: min(60%, 20rem);
+		padding: 2rem;
+		background-color: var(--almost-white);
+		box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.75);
+	}
+	.menu-title {
+		display: block;
+		color: var(--medium-gray);
+	}
+	li:has(.menu-title):first-of-type {
+		margin-top: 60px;
+	}
+	li:has(.menu-title) {
+		margin-right: auto;
+	}
+	.menu-hamburguer {
+		margin-left: auto;
+		position: relative;
+		z-index: 10;
+	}
+	.closed-menu {
+		display: none;
+	}
+	.login-register-buttons {
+		flex-direction: column;
+		margin-inline: auto;
+		margin-top: 2rem;
+		width: 100%;
+	}
+	.login-register-buttons button {
+		width: 100%;
+	}
+}
+
+@media screen and (width > 950px) {
+	.menu-title {
+		font-size: 0.85rem;
+		color: var(--medium-gray);
+	}
+	.menu-title:hover {
+		color: var(--almost-black);
+	}
+
+	.menu-hamburguer {
+		display: none;
+	}
+	.menu-option-arrow {
+		margin-left: 0.2rem;
+	}
+}

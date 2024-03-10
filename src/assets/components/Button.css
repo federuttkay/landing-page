@@ -1,0 +1,26 @@
+button {
+	font-family: inherit;
+	padding: 0.9em 1.5em;
+	border-radius: 0.9em;
+	border: 2px solid var(--medium-gray);
+	color: var(--medium-gray);
+	background-color: var(--almost-white);
+	width: fit-content;
+	transition: background 200ms;
+}
+
+button:hover {
+	border-color: var(--almost-black);
+	color: var(--almost-black);
+}
+
+.btn-black {
+	background-color: var(--almost-black);
+	border: 1px solid var(--almost-black);
+	color: var(--almost-white);
+	font-weight: 600;
+}
+.btn-black:hover {
+	background-color: var(--almost-white);
+	color: var(--almost-black);
+}

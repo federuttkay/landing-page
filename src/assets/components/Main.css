@@ -1,0 +1,98 @@
+.main-grid {
+	margin-inline: auto;
+	display: grid;
+	grid-template-areas:
+		"picture"
+		"title"
+		"paragraph"
+		"button"
+		"logos";
+}
+
+.main__heading {
+	grid-area: title;
+	align-self: end;
+	font-size: 3rem;
+}
+
+.main__heading::before {
+	content: "Make remote work";
+}
+
+.main__description {
+	grid-area: paragraph;
+	align-self: center;
+	color: var(--medium-gray);
+	font-size: 1.125rem;
+	line-height: 1.5;
+	max-width: 30rem;
+}
+
+.learn-btn {
+	grid-area: button;
+	align-self: center;
+}
+
+.learn-btn > button {
+	font-size: 1.2rem;
+	vertical-align: text-bottom;
+}
+
+.main-image {
+	grid-area: picture;
+	width: 100%;
+}
+
+.main-image > * {
+	width: 100%;
+}
+
+.logos {
+	grid-area: logos;
+	align-self: end;
+	gap: 32px;
+}
+
+@media screen and (width <= 950px) {
+	.main-grid {
+		row-gap: 2rem;
+	}
+	.main-grid > * {
+		margin-inline: auto;
+		text-align: center;
+	}
+	.learn-btn > button {
+		color: var(--almost-white);
+		background-color: var(--almost-black);
+		border-color: var(--almost-black);
+	}
+	.main__heading {
+		margin-top: 2rem;
+	}
+	.logos {
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (width > 950px) {
+	.main-grid {
+		margin-top: 0.5rem;
+		width: fit-content;
+		column-gap: min(5rem, 10vw);
+		grid-template-areas:
+			"title     picture"
+			"paragraph picture"
+			"button    picture"
+			"logos     picture";
+		grid-template-rows: 29vh 20vh 7vh;
+		grid-template-columns: repeat(2, min(550px, 42vw));
+	}
+	.main__heading {
+		font-size: 5rem;
+	}
+	.main__heading::before {
+		content: "Make \A remote work";
+		white-space: pre-wrap;
+		display: block;
+	}
+}

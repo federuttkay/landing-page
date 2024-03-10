@@ -1,0 +1,39 @@
+.submenu-container {
+	display: grid;
+	grid-template-rows: 0fr;
+	position: relative;
+	transition: grid-template-rows 350ms linear;
+}
+.submenu-container > div {
+	overflow: hidden;
+	width: max-content;
+}
+.expanded {
+	grid-template-rows: 1fr;
+}
+
+.submenu {
+	padding: 1rem;
+	border-radius: 0.5rem;
+	background-color: var(--almost-white);
+}
+
+@media screen and (width <= 950px) {
+	.submenu {
+		margin-top: 0.25rem;
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (width > 950px) {
+	.submenu-container {
+		position: absolute;
+		border-radius: 1rem;
+		top: 2rem;
+		right: 0;
+		box-shadow: 0 0 2rem -0.7rem var(--medium-gray);
+	}
+	.submenu {
+		width: max-content;
+	}
+}
