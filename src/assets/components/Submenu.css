@@ -18,14 +18,14 @@
 	background-color: var(--almost-white);
 }
 
-@media screen and (width <= 950px) {
+@media screen and (width <= 1050px) {
 	.submenu {
 		margin-top: 0.25rem;
 		padding-bottom: 0;
 	}
 }
 
-@media screen and (width > 950px) {
+@media screen and (width > 1050px) {
 	.submenu-container {
 		position: absolute;
 		border-radius: 1rem;

@@ -25,7 +25,7 @@ const Main = () => {
 				<img src={maker} alt="" />
 			</div>
 			<picture className="main-image">
-				<source srcSet={mainImageDesktop} media="(min-width: 950px)" />
+				<source srcSet={mainImageDesktop} media="(min-width: 1051px)" />
 				<img src={mainImageMobile} alt="" />
 			</picture>
 		</main>

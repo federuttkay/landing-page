@@ -48,6 +48,7 @@ a {
 .modal {
 	border-radius: 0.5rem;
 	margin: auto 1rem;
+	margin-inline: max(1rem, auto);
 	padding: 2rem;
 	max-width: 800px;
 	line-height: 1.5;
@@ -73,7 +74,7 @@ a {
 	color: blueviolet;
 }
 
-@media screen and (width > calc(1000px + 2rem)) {
+@media screen and (width > calc(800px + 2rem)) {
 	.modal {
 		margin: auto;
 	}

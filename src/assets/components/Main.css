@@ -49,6 +49,7 @@
 
 .main-image > * {
 	width: 100%;
+	max-width: 700px;
 }
 
 .logos {
@@ -61,7 +62,7 @@
 	max-width: 20%;
 }
 
-@media screen and (width <= 950px) {
+@media screen and (width <= 1050px) {
 	.main-grid {
 		row-gap: 2rem;
 	}
@@ -83,7 +84,7 @@
 	}
 }
 
-@media screen and (width > 950px) {
+@media screen and (width > 1050px) {
 	.main-grid {
 		margin-top: 0.5rem;
 		width: fit-content;

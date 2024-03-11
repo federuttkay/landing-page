@@ -9,7 +9,7 @@ button {
 	transition: background 200ms;
 }
 
-button:hover {
+button:active {
 	border-color: var(--almost-black);
 	color: var(--almost-black);
 }
@@ -20,7 +20,19 @@ button:hover {
 	color: var(--almost-white);
 	font-weight: 600;
 }
-.btn-black:hover {
+
+.btn-black:active {
 	background-color: var(--almost-white);
 	color: var(--almost-black);
+}
+
+@media screen and (width > 1050px) {
+	button:hover {
+		border-color: var(--almost-black);
+		color: var(--almost-black);
+	}
+	.btn-black:hover {
+		background-color: var(--almost-white);
+		color: var(--almost-black);
+	}
 }
