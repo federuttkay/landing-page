@@ -55,7 +55,6 @@
 .logos {
 	grid-area: logos;
 	align-self: end;
-	/* gap: 5.5%; */
 }
 
 .logos > img {
