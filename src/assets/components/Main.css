@@ -9,6 +9,10 @@
 		"logos";
 }
 
+.main-grid > * {
+	width: 100%;
+}
+
 .main__heading {
 	grid-area: title;
 	align-self: end;
@@ -50,7 +54,11 @@
 .logos {
 	grid-area: logos;
 	align-self: end;
-	gap: 32px;
+	/* gap: 5.5%; */
+}
+
+.logos > img {
+	max-width: 20%;
 }
 
 @media screen and (width <= 950px) {
@@ -71,6 +79,7 @@
 	}
 	.logos {
 		margin-top: 2rem;
+		justify-content: space-between;
 	}
 }
 
@@ -94,5 +103,8 @@
 		content: "Make \A remote work";
 		white-space: pre-wrap;
 		display: block;
+	}
+	.logos {
+		gap: 5.5%;
 	}
 }

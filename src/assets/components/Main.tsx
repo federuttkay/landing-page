@@ -9,7 +9,7 @@ import maker from "../images/client-maker.svg";
 
 const Main = () => {
 	return (
-		<main className="main main-grid">
+		<main className="main-grid">
 			<h1 className="main__heading"></h1>
 			<p className="main__description">
 				Get your team in sync, no matter your location. Streamline processes,

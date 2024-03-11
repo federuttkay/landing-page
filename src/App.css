@@ -17,6 +17,7 @@ body {
 	font-family: "Epilogue", sans-serif;
 	margin: var(--body-margin);
 	background-color: var(--almost-white);
+	width: calc(100% - 2 * var(--body-margin));
 }
 
 li {
