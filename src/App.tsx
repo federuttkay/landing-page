@@ -4,7 +4,6 @@ import items from "../src/assets/NavItems";
 import Main from "../src/assets/components/Main";
 import { useEffect, useRef } from "react";
 import Button from "./assets/components/Button";
-// import disenos from "../public/disenos.zip";
 import disenos from "/public/disenos.zip";
 
 function App() {
