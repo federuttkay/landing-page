@@ -4,7 +4,9 @@ import items from "../src/assets/NavItems";
 import Main from "../src/assets/components/Main";
 import { useEffect, useRef } from "react";
 import Button from "./assets/components/Button";
-import disenos from "/public/disenos.zip";
+// import disenos from "/src/assets/";
+// import disenos from "/src/disenos.zip";
+// import disenos2 from "/disenos.zip";
 
 function App() {
 	const modalRef = useRef<HTMLDialogElement>(null);
@@ -39,7 +41,7 @@ function App() {
 
 					<p>
 						Los modelos que se reproducen se pueden{" "}
-						<a href={disenos} download="disenos.zip">
+						<a href="/disenos.zip" download="disenos.zip">
 							descargar en formato zip
 						</a>
 						.
